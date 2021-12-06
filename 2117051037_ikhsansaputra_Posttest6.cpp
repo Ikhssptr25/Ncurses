@@ -11,7 +11,11 @@ int main(){
 	init_pair(4,COLOR_BLACK,COLOR_WHITE);
 	
 	attron(COLOR_PAIR(1));
-	mvprintw(1,1,"Welcome to ");
+	mvprintw(1,1,"Welcome ");
+	refresh();
+	Sleep(1000);
+	
+	mvprintw(1,9,"to ");
 	refresh();
 	Sleep(1000);
 	
@@ -46,7 +50,12 @@ int main(){
 		Sleep(250);
 		refresh();
 		clear();
-	}
+		printw("Loading....");
+		attroff(COLOR_PAIR(3));
+		Sleep(250);
+		refresh();
+		clear();
+}
 	clear();
 	
 	attron(COLOR_PAIR(4));
