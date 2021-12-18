@@ -22,7 +22,7 @@ int main(){
 	mvprintw(1,12,"my program ");
 	attroff(COLOR_PAIR(1));
 	refresh();
-	Sleep(500);
+	Sleep(1000);
 	
 	attron(COLOR_PAIR(2));
 	mvprintw(4,4,"please ");
